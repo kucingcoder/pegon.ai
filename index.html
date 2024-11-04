@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegon.ai - Ikhtisar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Arima", system-ui;
+            font-optical-sizing: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="h-screen bg-cover bg-center" style="background-image: url('Assets/bg.webp');">
+        <nav class="bg-opacity-30 backdrop-blur w-100 px-8 md:px-auto">
+            <div class="mx-auto md:px-4 py-4 md:py-2 container flex items-center justify-between flex-wrap md:flex-nowrap">
+                <a href="index.html" class="flex items-center gap-2 text-slate-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    </svg>
+                    <h1 class="text-2xl font-bold">Pegon.ai</h1>
+                </a>
+
+                <button type="button" class="md:hidden text-white" onclick="Menu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+        
+                <div class="hidden md:block text-lg text-slate-300 w-full md:w-auto" id="menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:mt-0 font-semibold justify-between">
+                        <li class="md:px-4 md:py-2 text-white"><a href="index.html">Ikhtisar</a></li>
+                        <li class="md:px-4 md:py-2 hover:text-white"><a href="kemajuan.html">Kemajuan</a></li>
+                        <li class="md:px-4 md:py-2 hover:text-white"><a href="tentang-kami.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="h-full flex flex-col items-center md:items-start my-24 md:my-0 md:justify-center md:mx-24 gap-4 [text-shadow:_1.5px_1.5px_3px_rgb(255_255_255_/_30%)]">
+            <div class="text-2xl md:text-5xl font-bold text-center md:text-left text-slate-100">
+                <h1>TEMUKAN</h1>
+                <h1>ILMU PENGETAHUAN</h1>
+                <h1>DIBALIK NASKAH PEGON</h1>
+            </div>
+
+            <div class="mx-4 md:mx-0 md:w-3/4 text-md text-justify md:text-xl text-slate-200">
+                <p>Naskah Pegon menyimpan pengetahuan penting tentang sejarah, budaya, dan spiritualitas masyarakat. Aplikasi transliterasi memungkinkan konversi aksara Pegon ke huruf Latin, memudahkan akses dan pemahaman isi pengetahuan ini.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-16 gap-10 md:gap-20 flex flex-col items-center justify-center">
+        <h1 class="text-2xl md:text-5xl font-bold">Apa Itu Pegon.ai</h1>
+
+        <div class="flex flex-col-reverse gap-10 md:gap-0 md:flex-row mx-6 md:mx-24 justify-between items-center">
+            <p class="md:w-1/2 text-md text-justify md:text-xl text-gray-900">Pegon.ai merupakan <strong>sistem transliterasi aksara pegon/jawi kedalam aksara latin</strong> agar dapat dibaca oleh semua kalangan. Dengan hanya menggunakan foto yang diambil secara langsung atau lewat galeri anda dapat <strong>mengubah teks pegon/jawi tersebut menjadi latin hanya dalam 1 klik</strong>. Penggunaan AI Computer Vision dan Natural Language Processing memberikan hasil transliterasi dengan akurasi yang tinggi sehingga meminimalisir kesalahan. Hasil transliterasi akan ditampilkan dalam bentuk paragraf dengan disertai informasi pendukung dan rekomendasi.</p>
+            <img class="w-4/5 md:w-1/3" src="Assets/ilustrasi.webp" alt="ilustrasi">
+        </div>
+    </div>
+
+    <div class="py-16 md:my-0 md:h-screen bg-cover bg-center gap-10 md:gap-20 flex flex-col items-center justify-center" style="background-image: url('Assets/bg2.webp');">
+        <h1 class="text-xl md:text-5xl font-bold text-slate-100 [text-shadow:_4px_2px_3px_rgb(0_0_0_/_40%)]">Manfaat Bagi Masyarakat</h1>
+
+        <div class="flex flex-col md:flex-row gap-8 mx-6">
+            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow drop-shadow-lg shadow-white"> 
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Transliterasi Aksara</h5>
+                <p class="font-normal text-gray-700">Mengubah aksara pegon ke latin biasa agar mudah dibaca, diterjemahkan, dan dipahami</p>
+            </div>
+
+            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow drop-shadow-lg shadow-white"> 
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Publikasi Ilmu Pengetahuan</h5>
+                <p class="font-normal text-gray-700">Konten naskah dan kitab kuno akan dibagikan dalam bentuk artikel ilmiah</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-16 gap-10 md:gap-20 flex flex-col items-center justify-center">
+        <h1 class="text-2xl md:text-5xl font-bold">Gunakan Pegon.ai</h1>
+
+        <div class="flex flex-col gap-4 md:gap-0 md:flex-row mx-6 md:mx-24 justify-between items-center">
+            <p class="md:w-1/2 text-md text-justify md:text-xl text-gray-900">Sistem Transliterasi Pegon.ai sudah digunakan oleh aplikasi "Jaga Aksara" yang dapat digunakan untuk transliterasi berbagai aksara kuno di nusantara dan dunia. Aplikasi tersebut sudah tersedia di Google Play Store.</p>
+            
+            <a href="" class="w-fit h-fit px-4 py-2 flex items-center justify-center mt-3 text-white bg-black rounded-lg drop-shadow-md">
+                <div class="mr-3">
+                    <svg viewBox="30 336.7 120.9 129.2" width="30">
+                        <path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z">
+                        </path>
+                        <path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z">
+                        </path>
+                        <path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z">
+                        </path>
+                        <path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">
+                        Download Jaga Aksara App
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let expand = 0;
+        function Menu() {
+            if (expand == 0) {
+                expand = 1;
+                let menu = document.getElementById("menu");
+                menu.classList.remove("hidden");
+            } else {
+                expand = 0;
+                let menu = document.getElementById("menu");
+                menu.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>
